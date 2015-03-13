@@ -87,13 +87,15 @@ $select-hover-bg-color: scale-color($select-bg-color, $lightness: -3%) !default;
   .row { margin: 0 ((-$form-spacing) / 2);
 
     .column,
-    .columns { padding: 0 ($form-spacing / 2); }
+    .columns {      
+        padding: 0 ($form-spacing / 2); }
 
     // Use this to collapse the margins of a form row
     &.collapse { margin: 0;
 
       .column,
-      .columns { padding: 0; }
+      .columns {       
+        padding: 0; }
       input {
         @include side-radius($opposite-direction, 0);
       }

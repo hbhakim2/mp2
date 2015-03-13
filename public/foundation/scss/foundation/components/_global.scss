@@ -241,7 +241,7 @@ $jet           : #222222 !default;
 $black         : #000000 !default;
 
 // We use these as default colors throughout
-$primary-color: #008CBA !default;   // bondi-blue
+$primary-color: $orange !default;   // bondi-blue
 $secondary-color: #e7e7e7 !default; // white-lilac
 $alert-color: #f04124 !default;     // cinnabar
 $success-color: #43AC6A !default;   // sea-green
@@ -269,7 +269,7 @@ $font-smoothing: antialiased !default;
 
 // We use these to control text direction settings
 $text-direction: ltr !default;
-$default-float: left !default;
+$default-float: right !default;
 $opposite-direction: right !default;
 @if $text-direction == ltr {
   $default-float: left;

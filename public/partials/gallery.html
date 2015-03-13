@@ -1,0 +1,67 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="small-centered columns small-10 medium-10 large-12">
+      <!--Sidebar content-->
+
+<!--
+        <div class="slider" slick>
+            <div><div><img class="pict" src="./data/img/car1.jpg"/></div></div>
+            
+            <div ng-repeat="movie in movies | unique: 'genre'" class="thumbnail"> 
+              <img class="pict" src="./data/img/car5.png"/>
+            </div>
+        </div>
+-->
+
+<!--
+  <slick autoplay="true" autoplaySpeed="500" fade="true">
+            <div ng-repeat="movie in movies | unique: 'genre'" class="thumbnail"> 
+              <img class="pict" src="./data/img/car5.png"/>
+            </div>
+
+ </slick>        
+-->
+      <ul class="button-group even-9">
+        <li><a class="button small" href=""  ng-click="choose('');">All</a></li>  
+        <li ng-repeat="movie in movies | unique: 'genre'" class="thumbnail"> 
+          <a class="button small" href="" ng-click="choose(movie);">{{movie}}</a>
+        </li>
+      </ul>
+        
+      
+    </div>
+</div>
+<div class="row">
+    <div class="small-centered columns small-10 medium-10 large-12">
+      <!--Body content-->
+
+      <ul class="small-block-grid-3 medium-block-grid-6 large-block-grid-8">
+        <li ng-repeat="movie in movies | filter:{genre:query}" class="thumbnail">
+          <a href="#/detail/{{movies.indexOf(movie)}}" class="thumb"><img class="th zoom" ng-src="../data/images/{{movie.imdbID}}.jpg"></a>
+<!--          <a href="#/detail/{{movies.indexOf(movie)}}">{{movie.title}}</a>-->
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+</div>
+<!--
+
+<script lang="javascript">
+    $(document).ready(function(){
+      $('.slider').slick({
+        //setting-name: setting-value
+        dots: true,
+        infinite: true,
+        speed: 500,
+        //adaptiveHeight: true,  
+        //arrows: true,
+        //centerMode: true,
+        cssEase: 'linear'  
+      });
+
+    });
+
+</script>-->

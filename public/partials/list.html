@@ -1,0 +1,51 @@
+<div class="row">
+    <div class="small-centered columns small-12 medium-8 large-8 ">      
+    <div class="panel callout radius">
+      <!--Sidebar content-->
+
+    <div class="row">
+      <div class="large-12 columns">
+        <label>Search:
+          <input type="text" ng-model="query" placeholder="movies...">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <label>Sort By:
+          <select ng-model="order">
+            <option value="title">Title</option>
+            <option value="rank">Rank</option>
+          </select>
+        </label>
+      </div>
+    </div>
+    <div class="text-center">
+      <input type="radio" name="reverse" ng-model="reverse" checked> Ascending
+      <input type="radio" name="reverse" ng-model="reverse" value="reverse"> Descending
+    </div>
+
+    </div>
+    <div>
+      <!--Body content-->
+
+
+        <div ng-repeat="movie in movies | filter:query | orderBy:order:reverse" class="zoom panel">
+        <a href="#/detail/{{movies.indexOf(movie)}}">    
+        <div class="row  smal-centered">
+          <div class="columns small-4 medium-2 large-2 ">  
+              <img class="pict" ng-src="../data/images/{{movie.imdbID}}.jpg">
+          </div>
+          <div class="columns small-8 medium-10 large-10 ">  
+              <h2>{{movie.title}}</h2>
+              Rank {{movie.rank}}
+          </div>
+        </div>
+        </a>
+        </div>
+
+
+    </div>
+    </div>
+
+</div>

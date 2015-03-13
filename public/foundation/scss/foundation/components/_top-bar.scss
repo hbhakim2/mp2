@@ -13,7 +13,7 @@
 $include-html-top-bar-classes: $include-html-classes !default;
 
 // Background color for the top bar
-$topbar-bg-color: $oil !default;
+$topbar-bg-color: $oil !default; //piyo
 $topbar-bg: $topbar-bg-color !default;
 
 // Height and margin
@@ -33,7 +33,7 @@ $topbar-link-weight: $font-weight-normal !default;
 $topbar-link-font-size: rem-calc(13) !default;
 $topbar-link-hover-lightness: -10% !default; // Darken by 10%
 $topbar-link-bg: $topbar-bg !default;
-$topbar-link-bg-hover: $oil !default;
+$topbar-link-bg-hover: $primary-color !default; //piyo
 $topbar-link-bg-color-hover: $charcoal !default;
 $topbar-link-bg-active: $primary-color !default;
 $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%) !default;
@@ -41,12 +41,12 @@ $topbar-link-font-family: $body-font-family !default;
 $topbar-link-text-transform: none !default;
 $topbar-link-padding: ($topbar-height / 3) !default;
 $topbar-back-link-size: rem-calc(18) !default;
-$topbar-link-dropdown-padding: rem-calc(20) !default;
+$topbar-link-dropdown-padding: rem-calc(10) !default;
 $topbar-button-font-size: 0.75rem !default;
 $topbar-button-top: 7px !default;
 
 // Style the top bar dropdown elements
-$topbar-dropdown-bg: $oil !default;
+$topbar-dropdown-bg: $oil !default;  //piyo
 $topbar-dropdown-link-color: $white !default;
 $topbar-dropdown-link-color-hover: $topbar-link-color-hover !default;
 $topbar-dropdown-link-bg: $oil !default;
@@ -73,7 +73,7 @@ $topbar-menu-icon-color-toggled: $jumbo !default;
 $topbar-menu-icon-position: $opposite-direction !default; // Change to $default-float for a left menu icon
 
 // Transitions and breakpoint styles
-$topbar-transition-speed: 300ms !default;
+$topbar-transition-speed: 500ms !default;
 // Using rem-calc for the below breakpoint causes issues with top bar
 $topbar-breakpoint: #{lower-bound($medium-range)} !default; // Change to 9999px for always mobile layout
 $topbar-media-query: $medium-up !default;
@@ -156,6 +156,7 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
       line-height: $topbar-height;
       position: relative;
       background: $topbar-bg;
+      border-radius: 0px 0px 10px 10px;
       margin-bottom: $topbar-margin-bottom;
 
       // Topbar Global list Styles
@@ -273,7 +274,10 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
         height: auto;
         background: transparent;
 
-        .title-area { background: $topbar-bg; }
+        .title-area { 
+            background: $topbar-bg; 
+            border-radius: 0px 0px 10px 10px; //piyo
+        } 
 
         .toggle-topbar {
           a { color: $topbar-menu-link-color-toggled;
@@ -292,8 +296,9 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
     // Right and Left Navigation that stacked by default
     .top-bar-section {
       #{$default-float}: 0;
+      float: right;
       position: relative;
-      width: auto;
+      width: auto; //piyo
       @include single-transition($default-float, $topbar-transition-speed);
 
       ul {
@@ -317,9 +322,10 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
         background: $topbar-dropdown-bg;
         & > a {
           display: block;
-          width: 100%;
+          width: 150px; //piyo
+          //height: 30px; //piyo
           color: $topbar-link-color;
-          padding: 12px 0 12px 0;
+          padding: 0 20 0 20;
           padding-#{$default-float}: $topbar-link-padding;
           font-family: $topbar-link-font-family;
           font-size: $topbar-link-font-size;
@@ -353,6 +359,9 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
         // Apply the hover link color when it has that class
         &:hover:not(.has-form) > a {
           background-color: $topbar-link-bg-color-hover;
+          border-radius: 0px 0px 10px 10px; //piyo
+          border: solid 1px  $topbar-dropdown-bg; //piyo   
+            
           @if ($topbar-link-bg-hover) {
             background: $topbar-link-bg-hover;
           }

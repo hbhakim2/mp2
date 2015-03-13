@@ -1,0 +1,28 @@
+
+<div class="row">
+    <div class="small-centered columns small-12 medium-10 large-10 ">
+        <div class="panel" ng-model="movies">
+            <a class="button tiny" href="#/detail/{{prevID()}}">< prev</a>
+            <a class="button tiny" style="float:right;" href="#/detail/{{nextID()}}">next ></a>
+            <hr>
+            <h2> {{movies[theID].title }}</h2>
+            <h3> Rank {{movies[theID].rank }}</h3>
+
+            <div class="row">    
+                <div class="columns small-12 medium-4 large-4 ">
+                    <img class="pict" ng-src="../data/images/{{movies[theID].imdbID}}.jpg">
+                </div>    
+                <div class="columns small-12 medium-8 large-8 "> 
+                    <div class="panel callout">
+                        <span> {{movies[theID].plot }}</span>
+                    </div>    
+                    <p></p>
+                    Released: {{movies[theID].released }}<hr>
+                    Runtime: {{movies[theID].runtime }}<hr>
+                    Awards: {{movies[theID].awards }}
+    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

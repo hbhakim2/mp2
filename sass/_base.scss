@@ -1,14 +1,45 @@
-@import url('http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather');
-@import url('http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
+@import url('http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather|Montserrat|Cardo&effect=shadow-multiple|3d|outline');
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+//@import url('http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
 
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 35px;
   color: lighten($orange, 25);
+  font-family: "Montserrat", sans-serif;
 }
 
-.test {
-  font-size: 1.2rem;
-  color: $blue;
+h2 {
+  font-size: 30px;
+  text-shadow: 2px 2px 2px grey;
+  color: lighten($orange, 25);
+  font-family: "Montserrat", sans-serif;
 }
 
+h3 {
+  font-size: 25px;
+  color: lighten($orange, 25);
+  font-family: "Montserrat", sans-serif;
+}
+h4 {
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+    //background: url("../data/img/bg.png");
+    background-repeat: repeat;
+    background-attachment: fixed;    
+    font: 24px/1.4 'Cardo','Open Sans Condensed', Tahoma, Geneva, sans-serif;
+}
+
+footer {
+    clear: both;
+    background: $color1;
+    height: 100px;
+    width: 100%;
+    border-top: solid 2px #757575;
+    display: table;
+    vertical-align: middle;
+    @include box-shadow(15px);
+}
