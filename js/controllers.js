@@ -4,7 +4,7 @@ var imdbControllers = angular.module('imdbControllers',  []);
 
 imdbControllers.controller('imdbListCtrl', ['$scope', '$http',
   function ($scope, $http) {
-    $http.get('../data/imdb250.json').success(function(data) {
+    $http.get('./data/imdb250.json').success(function(data) {
       $scope.movies = data;
     });
     $scope.query = '';
@@ -13,7 +13,7 @@ imdbControllers.controller('imdbListCtrl', ['$scope', '$http',
 
 imdbControllers.controller('imdbGalCtrl', ['$scope', '$http',
   function ($scope, $http) {
-    $http.get('../data/imdb250.json').success(function(data) {
+    $http.get('./data/imdb250.json').success(function(data) {
       $scope.movies = data;
     });
     $scope.order = 'title';
@@ -25,7 +25,7 @@ imdbControllers.controller('imdbGalCtrl', ['$scope', '$http',
 
 imdbControllers.controller('imdbDetailCtrl', ['$scope', '$http', '$routeParams',
   function($scope, $http, $routeParams) {
-      $http.get('../data/imdb250.json').success(function(data) {
+      $http.get('./data/imdb250.json').success(function(data) {
         $scope.movies = data;
         $scope.theID = $routeParams.imdbID;
    
