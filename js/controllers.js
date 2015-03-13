@@ -66,3 +66,13 @@ imdbControllers.filter('unique', function() {
 });      
 
 
+//////////////////////////////////////////////////////////////////
+var myControllers = angular.module('myControllers',  []);
+
+myControllers.controller('myHighlightCtrl', ['$scope', '$http',
+  function ($scope, $http) {
+    $http.get('./data/highlight.json').success(function(data) {
+      $scope.news = data;
+    });
+    $scope.query = '';
+  }]);

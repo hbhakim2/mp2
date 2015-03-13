@@ -1,0 +1,12 @@
+        <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3 ">
+            <li ng-repeat="item in news | orderBy:order">
+                <div class="grid">
+                <h4>{{item.title}}</h4>
+                <img class="pict" ng-src="./data/img/{{item.pict}}.jpg" >    
+                {{item.content}}
+                <br><br>
+                <a href="#">more →</a>
+                </div>
+            </li>
+        </ul>
+

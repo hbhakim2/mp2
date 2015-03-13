@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Geologists unlock mysteries of Earth's inner core",
+    "content": "Thanks to a novel application of earthquake-reading technology, a research team at the University of Illinois and colleagues at Nanjing University in China have found that the Earth’s inner core has an inner core of its own, which has surprising properties that could reveal information about our planet. ",
+    "pict": "news1"
+  },
+  {
+    "id": 2,
+    "title": "Fascination with cats preceded the 'social media' phenomenon",
+    "content": "Journalism professor Matthew Ehrlich found hundreds of cat tales, both fun and serious, over 140 years of New York Times history. In the process, he also found evidence of our evolving        relationship with animals and reasons to “take animal news seriously.",
+    "pict": "news2"
+  },
+  {
+    "id": 3,
+    "title": "Illinois' muskrats and minks found to harbor toxoplasmosis",
+    "content": "A new study of muskrats and minks in central Illinois indicates that toxoplasmosis, a disease spread by cats, is moving rapidly through the landscape and contaminating local waterways. Researchers found antibodies for Toxoplasma gondii, the parasite that causes toxoplasmosis.",
+    "pict": "news3"
+  },
+  {
+    "id": 4,
+    "title": "Some plants regenerate by duplicating their DNA",
+    "content": "When munched by grazing animals (or mauled by scientists in the lab), some herbaceous plants overcompensate – producing more plant matter and becoming more fertile than they otherwise would. Scientists say they now know how these plants accomplish this feat of regeneration.",
+    "pict": "news4"
+  },
+  {
+    "id": 5,
+    "title": "The case for the English major",
+    "content": "A degree in English, Professor Christopher Freeburg says, is an excellent primer for careers in a variety of fields—but, particularly in today’s world, with growing emphasis on the STEM fields. Freeburg advocates the “vocationalization” of his field—that is, giving students an awareness of how the skills they’re learning in English classes.",
+    "pict": "news5"
+  },    
+  {
+    "id": 6,
+    "title": "The first cat toy that behaves like prey",
+    "content": "The concept: Real prey doesn’t move randomly - it reacts. Mousr reacts to cats, using a 360-degree camera and sensors to detect when the toy has been caught or has hit an obstacle.",
+    "pict": "news6"
+  }    
+]

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
 <head>
     <title>My Illinois</title>    
     <link rel="shortcut icon" href="./data/img/favicon.ico" />
@@ -114,76 +114,17 @@
     <hr class="dashed">    
     <div class="separator"></div>
 
-
     <div class="row">
         <div class="small-centered columns small-12 medium-12 large-12 ">
         <a id="highlight" name="highlight" data-magellan-destination="highlight"></a>
         <h2><i class="fa fa-newspaper-o"></i> HIGHLIGHT</h2>    
-        <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3 ">
-            <li>
-                <div class="grid">
-                <h4>Geologists unlock mysteries of Earth's inner core</h4>
-                <img class="pict" src="./data/img/news1.jpg" >    
-                Thanks to a novel application of earthquake-reading technology, a research team at the University of Illinois and colleagues at Nanjing University in China have found that the Earth’s inner core has an inner core of its own, which has surprising properties that could reveal information about our planet. 
-                <br><br>
-                    
-                <a href="#">more →</a>
-                </div>
-            </li>
-            <li>
-                <div class="grid">
-                <h4>Fascination with cats preceded the 'social media' phenomenon</h4>
-                <img class="pict" src="./data/img/news2.jpg" >
-                Journalism professor Matthew Ehrlich found hundreds of cat tales, both fun and serious, over 140 years of New York Times history. In the process, he also found evidence of our evolving        relationship with animals and reasons to “take animal news seriously.”
-                <br><br>
-                <a href="#">more →</a>
-                </div>
-            </li>
-            <li>
-                <div class="grid">
-                <h4>Illinois' muskrats and minks found to harbor toxoplasmosis</h4>
-                <img class="pict" src="./data/img/news3.jpg" >
-                A new study of muskrats and minks in central Illinois indicates that toxoplasmosis, a disease spread by cats, is moving rapidly through the landscape and contaminating local waterways. Researchers found antibodies for Toxoplasma gondii, the parasite that causes toxoplasmosis. 
-                <br><br>
-                <a href="#">more →</a>
-                </div>
-            </li>
-            <li>
-                <div class="grid">
-                <h4>Some plants regenerate by duplicating their DNA</h4>
-                <img class="pict" src="./data/img/news4.jpg" >
-                When munched by grazing animals (or mauled by scientists in the lab), some herbaceous plants overcompensate – producing more plant matter and becoming more fertile than they otherwise would. Scientists say they now know how these plants accomplish this feat of regeneration.
-                <br><br>
-                <a href="#">more →</a>
-                </div>
-            </li>
-            <li>
-                <div class="grid">
-                <h4>The case for the English major</h4>    
-                <img class="pict" src="./data/img/news5.jpg" >
-                A degree in English, Professor Christopher Freeburg says, is an excellent primer for careers in a variety of fields—but, particularly in today’s world, with growing emphasis on the STEM fields. Freeburg advocates the “vocationalization” of his field—that is, giving students an awareness of how the skills they’re learning in English classes.
-                <br><br>
-                <a href="#">more →</a>
-                </div>
-            </li>
-            <li>
-                <div class="grid">
-                <div class="grid">
-                <h4>The first cat toy that behaves like prey</h4>    
-                <img class="pict" src="./data/img/news6.jpg" >
-                The concept: Real prey doesn’t move randomly - it reacts. Mousr reacts to cats, using a 360-degree camera and sensors to detect when the toy has been caught or has hit an obstacle.
-                <br><br>
-                <a href="#">more →</a>
-                </div>      
-            </li>    
-            
-        </ul>
-
+    
+            <div ng-view></div>
         </div>
     </div>
-    
+            
     <div class="separator"></div>
-    <hr>
+    <hr class="dashed">
     <div class="separator"></div>
     
 <!--    VIDEO-->
